@@ -1,13 +1,18 @@
+
 const express = require("express");
 
 const router = express.Router();
 
-const { 
-    cadastrar, 
-    listar, 
-    buscar, 
-    atualizar, 
-    excluir } = require("../controllers/professor.controller");
+const {
+    cadastrar,
+    listar,
+    buscar,
+    atualizar,
+    excluir,
+    login
+} = require("../controllers/professor.controller");
+
+router.post("/login", login);
 
 router.post("/cadastrar", cadastrar);
 router.get("/listar", listar);

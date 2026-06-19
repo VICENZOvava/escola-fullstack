@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Do Vicenzo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="auth-screen" class="container">
+        <div class="auth-box">
+            <h1>Escola Do Vicenzo</h1>
+            <p class="subtitle">Gerenciador de atividades</p>
+
+            <div class="form-group">
+                <input type="email" id="auth-email" placeholder="E-mail">
+                <input type="password" id="auth-senha" placeholder="Senha">
+            </div>
+
+            <div class="auth-buttons">
+                <button id="btn-login" class="btn-primary">
+                    Entrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="app" class="oculto">
+
+        <header>
+            <h1>Gerenciador de Atividades</h1>
+        </header>
+
+        <nav class="fluxo-nav">
+
+            <button onclick="mostrarTela('turmas')">
+                Lista de Turmas
+            </button>
+
+            <button onclick="abrirModalTurma()">
+                Nova Turma
+            </button>
+
+            <button onclick="mostrarTela('atividades')">
+                Lista de Atividades
+            </button>
+
+            <button onclick="abrirModalAtividade()">
+                Nova Atividade
+            </button>
+
+        </nav>
+
+        <main>
+
+         
+            <section id="tela-turmas" class="tela">
+
+                <h2>Turmas Cadastradas</h2>
+
+                <div id="lista-turmas" class="cards-container">
+
+                </div>
+
+            </section>
+
+            
+            <section id="tela-atividades" class="tela oculto">
+
+                <h2>Atividades Cadastradas</h2>
+
+                <div id="lista-atividades" class="cards-container">
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    
+    <div id="modal-turma" class="modal oculto">
+
+        <div class="modal-content">
+
+            <h2>Nova Turma</h2>
+
+            <input
+                type="number"
+                id="numeroTurma"
+                placeholder="Número da turma"
+            >
+
+            <input
+                type="text"
+                id="nomeTurma"
+                placeholder="Nome da turma"
+            >
+
+            <button onclick="salvarTurma()">
+                Salvar
+            </button>
+
+            <button onclick="fecharModalTurma()">
+                Cancelar
+            </button>
+
+        </div>
+
+    </div>
+
+    
+    <div id="modal-atividade" class="modal oculto">
+
+        <div class="modal-content">
+
+            <h2>Nova Atividade</h2>
+
+            <input
+                type="number"
+                id="numeroAtividade"
+                placeholder="Número da atividade"
+            >
+
+            <textarea
+                id="descricaoAtividade"
+                placeholder="Descrição da atividade"
+            ></textarea>
+
+            <select id="turmaAtividade">
+                <option value="">
+                    Selecione uma turma
+                </option>
+            </select>
+
+            <button onclick="salvarAtividade()">
+                Salvar
+            </button>
+
+            <button onclick="fecharModalAtividade()">
+                Cancelar
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

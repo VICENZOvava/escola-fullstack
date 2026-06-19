@@ -10,7 +10,7 @@ const {
     excluir } = require("../controllers/turma.controller");
 
 router.post("/cadastrar", cadastrar);
-router.get("/listar", listar);
+router.get("/listar/", listar);
 router.get("/buscar/:id", buscar);
 router.put("/atualizar/:id", atualizar);
 router.delete("/excluir/:id", excluir);
