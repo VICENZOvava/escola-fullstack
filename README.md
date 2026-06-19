@@ -3,17 +3,17 @@
 
 # logins professores
 
-vicenzo@gmail.com
-01092008
+email - vicenzo@gmail.com
+ senha - 01092008
 
 ---
 
-josivaldo123@gmail.com
-senhainsana
+email - josivaldo123@gmail.com
+ senha - senhainsana
 
 ---
 
-rosangela@gmail.com
-rosangelasenha
+email - rosangela@gmail.com
+ senha - rosangelasenha
 
 ---
